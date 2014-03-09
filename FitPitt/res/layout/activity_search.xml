@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    
+    <RelativeLayout android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/titlebar_gradient">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="Results - Workout Partners"
+        android:textSize="18sp" />
+	</RelativeLayout>
+	
+    <ScrollView android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/headerlayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="What are you searching for?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="291dp"
+            android:layout_height="434dp"
+            android:onClick="toResults" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Users" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout partners" />
+            	<Spinner
+                	android:id="@+id/spinner1"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:entries="@array/workout_array" />
+            	<Spinner
+            	    android:id="@+id/spinner2"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:entries="@array/exercises_array" />
+               <Spinner
+               	 	android:id="@+id/spinner3"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:entries="@array/location_array" />
+            
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup Games" />
+            
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groups" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toResults"
+                android:text="Search" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

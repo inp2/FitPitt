@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultsActivity" >
+
+    <RelativeLayout android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/titlebar_gradient">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="Results - Workout Partners"
+        android:textSize="18sp" />
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Workout Partner Needed"
+        android:textSize="18sp" />
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:text="Creator: Matthias Wally"
+        android:textSize="16sp" />
+      <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="25dp"
+        android:text="Date: Friday, March 29, 2013 - 11:00 AM"
+        android:textSize="16sp" />
+      <View
+   			android:layout_width="fill_parent"
+    		android:layout_height="1dp"
+    		android:background="@android:color/darker_gray" 
+    		android:layout_below="@+id/textView3"/>
+    
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView3"
+          android:layout_marginTop="50dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:orientation="horizontal">
+    <Button android:id="@+id/returnsearch"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Return to Search"
+        android:layout_gravity="center_vertical"
+        android:onClick="toSearch" 
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/returncalendar"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="toMain"
+        android:text="Calendar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultsActivity" >
+
+    <RelativeLayout android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/titlebar_gradient">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="Pickup Basketball"
+        android:textSize="18sp" />
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Creator: Marky Mark"
+        android:textSize="18sp" />
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Type: Basketball"
+        android:textSize="16sp" />
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Public - Single Time"
+        android:textSize="16sp" />
+      <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Date: Saturday, March 30, 2013"
+        android:textSize="16sp" />
+      <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Time: 5:00 PM"
+        android:textSize="16sp" />
+      <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Location: Bellefield Gym"
+        android:textSize="16sp" />
+      <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:text="Notes: Bring lots of people!"
+        android:textSize="16sp" />
+    
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView7"
+          android:layout_marginTop="50dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:orientation="horizontal">
+    <Button android:id="@+id/deleteevent"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Delete Event"
+        android:background="@drawable/delete_button_gradient"
+        android:layout_gravity="center_vertical"
+        android:onClick="deleteEvent" 
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:id="@+id/returncalendar"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="toMain"
+        android:text="Back to Calendar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

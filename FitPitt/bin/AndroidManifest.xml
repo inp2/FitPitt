@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.pitt.fitpitt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/FitPittTheme" >
+        <activity
+            android:name="edu.pitt.fitpitt.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.Signup"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.SignupTwo"
+            android:label="@string/title_activity_signuptwo" >
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.CreateEventActivity"
+            android:label="@string/title_activity_create_event" >
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.SearchResultsActivity"
+            android:label="@string/title_activity_search_results" >
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.EventListActivity"
+            android:label="@string/title_activity_event_list" >
+        </activity>
+        <activity
+            android:name="edu.pitt.fitpitt.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+    </application>
+
+</manifest>

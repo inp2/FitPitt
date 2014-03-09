@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     tools:context=".CreateEventActivity">
+     
+    <RelativeLayout android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/titlebar_gradient">
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="Create Event"
+        android:textSize="18sp" />
+	</RelativeLayout>
+<ScrollView
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_below="@+id/headerlayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout android:id="@+id/eventNameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Event Name" >
+
+            <requestFocus />
+        </EditText>
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/privacylayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public" 
+            android:layout_marginRight="10dp"/>
+         <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private" />
+        
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/recurrencelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequency:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+        <GridLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:columnCount="2"
+    		android:rowCount="2" >
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Time" 
+            android:textSize="14sp"/>
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily" 
+            android:textSize="14sp" />
+        
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly" 
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"/>
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly" 
+            android:textSize="14sp"/>
+        </GridLayout>
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/datepickerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/timepickerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/locationLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+          <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/location_array" />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/noteslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes:"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp" />
+           <EditText
+            android:id="@+id/notestext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter notes for this event." >
+        	</EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toMain"
+            android:text="Create" />
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

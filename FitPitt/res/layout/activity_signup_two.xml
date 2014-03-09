@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Signup" >
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferences" 
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"/>
+    
+    <Button android:id="@+id/selectsports"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Select the sports you are interested in:" />
+    
+     <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Availability" 
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    
+    <ScrollView
+        android:id="@+id/availabilityform"
+        android:layout_width="320dp"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" >
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Sunday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Monday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Tuesday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Wednesday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Thursday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+            
+           <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Friday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:gravity="left">
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Saturday:"
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="Start" 
+    				android:onClick="showTimePickerDialog"
+    				android:layout_marginRight="10dp" 
+    				/>
+            	<TextView android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:gravity="left"
+                	android:text="TO" 
+                	android:layout_marginRight="10dp" />
+            	<Button 
+    				android:layout_width="80dp" 
+    				android:layout_height="35dp"
+    				android:text="End" 
+    				android:onClick="showTimePickerDialog" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Finish" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

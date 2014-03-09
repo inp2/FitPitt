@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FitPitt</string>
+    <string name="welcome">Welcome to FitPitt!</string>
+    <string name="createaccount">Create Account</string>
+    <string name="next">Next</string>
+    <string name="userinfo"><u><b>User Information</b></u></string>
+    <string name="menu_settings">Settings</string>
+    <string name="action_search">Action Search</string>
+    <string name="action_main">Calendar</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_signuptwo">Preferences</string>
+    <string name="title_activity_create_event">CreateEventActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="title_activity_event_list">EventListActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    
+    <string name="instructions">Please enter the following information so that you can get started quickly in finding workout partners and pickup games matching your interests and availabilty.  You can change/edit these at any time in your Profile.</string>
+	<string name="create_acct_instrucs">Enter a username and password that you can use to engage in the social features of this application.</string>
+    
+    <string-array name="location_array">
+        <item>Trees Hall</item>
+        <item>Baierl Rec Center</item>
+        <item>Bellefield Gym</item>
+        <item>Cathedral Lawn</item>
+    </string-array>
+    <string-array name="workout_array">
+        <item>Powerlifting</item>
+        <item>Bodybuilding</item>
+        <item>Cardio</item>
+    </string-array>
+    <string-array name="exercises_array">
+        <item>Deadlifts</item>
+        <item>Squats</item>
+        <item>Bench Press</item>
+        <item>Rows</item>
+        <item>Dips</item>
+        <item>Pullups</item>
+        <item>Standing Overhead Press</item>
+        <item>Clean and Press</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+    android:orientation="vertical">
+        
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" 
+            android:gravity="center" >
+    <TextView android:id="@+id/instructext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/instructions" />
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userinfo" 
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_acct_instrucs" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+            
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:onClick="toNewUserSecondScreen"
+                android:text="@string/next" />
+            
+        </LinearLayout>
+    </ScrollView>
